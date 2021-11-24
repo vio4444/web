@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<script>
+			function draw(){
+				var canvas = document.getElementById('canvas');
+				var ctx = canvas.getContext('2d');
+				
+						
+				ctx.beginPath(); //1
+				ctx.arc(250,150,50,360,0,true);
+				ctx.fillStyle= 'blue';
+				ctx.fill();
+				ctx.beginPath(); //2
+				ctx.arc(247,150,47,360,0,true);
+				ctx.fillStyle= 'red';
+				ctx.fill();
+				ctx.beginPath(); //3
+				ctx.arc(244,150,44,360,0,true);
+				ctx.fillStyle= 'yellow';
+				ctx.fill();
+				ctx.beginPath(); //4
+				ctx.arc(241,150,41,360,0,true);
+				ctx.fillStyle= 'purple';
+				ctx.fill();
+				ctx.beginPath(); //5
+				ctx.arc(238,150,38,360,0,true);
+				ctx.fillStyle= 'green';
+				ctx.fill();
+				ctx.beginPath(); //6
+				ctx.arc(235,150,35,360,0,true);
+				ctx.fillStyle= 'pink';
+				ctx.fill();
+				ctx.beginPath(); //7
+				ctx.arc(232,150,32,360,0,true);
+				ctx.fillStyle= 'brown';
+				ctx.fill();
+				ctx.beginPath(); //8
+				ctx.arc(229,150,29,360,0,true);
+				ctx.fillStyle= 'yellow';
+				ctx.fill();
+				ctx.beginPath(); //9
+				ctx.arc(226,150,26,360,0,true);
+				ctx.fillStyle= 'yellow';
+				ctx.fill();
+				ctx.beginPath(); //10
+				ctx.arc(223,150,23,360,0,true);
+				ctx.fillStyle= 'red';
+				ctx.fill();
+				ctx.beginPath(); //11
+				ctx.arc(220,150,20,360,0,true);
+				ctx.fillStyle= 'orange';
+				ctx.fill();
+				ctx.beginPath(); //12
+				ctx.arc(217,150,17,360,0,true);
+				ctx.fillStyle= 'grey';
+				ctx.fill();
+					}
+		</script>
+	</head>
+	<body onload="draw();">
+		<canvas id="canvas" width="500" height="500">
+		</canvas>
+	</body>
+</html>

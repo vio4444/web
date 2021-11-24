@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script>		
+			function draw(x,y,width,height,color) {
+				var canvas = document.getElementById('canvas');
+				var ctx = canvas.getContext('2d');
+				ctx.fillStyle = 'White';
+				ctx.fillRect(0,0,9999,9999);
+			
+				ctx.fillStyle = color;
+				ctx.fillRect(x,y,width,height);
+								
+				}
+		</script>
+	</head>
+	<body onload="draw(100,100,20,20,'red');">
+		<canvas id="canvas" width="250" height="250">
+		</canvas>	
+		<p> Координата Х: <br>
+		<input type = "number" id = "x" step = "100">
+		</p>
+		<p> Координата У: <br>
+		<input type = "number" id = "y" step = "100">
+		</p>
+		<p> Ширина: <br>
+		<input type = "number" id = "shir" step = "100">
+		</p>
+		<p> Высота:<br>
+		<input type = "number" id = "vis" step = "100">
+		</p>
+		<p> Цвет: <br>
+		<input type = "text" id = "color" value= "grey">
+		</p>
+		<input type = "button" value = "Start" onclick= "draw(x.value,y.value,shir.value,vis.value,color.value);"/>
+	</body>	
+</html>

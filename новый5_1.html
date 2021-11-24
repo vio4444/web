@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function draw() {
+				var canvas = document.getElementById('canvas');
+				var ctx = canvas.getContext('2d');
+				ctx.fillRect(0,0,100,100);
+				ctx.fillStyle = 'black';
+				
+				//ctx.fillStyle = 'green';
+				//ctx.fillRect(20,0,300,300);
+			}
+		</script>
+	</head>
+	<body onload="draw();">
+		<canvas id="canvas" 
+			width="1000" 
+			height="1000">
+		</canvas>
+		<input type = "button" value = "Start" />
+	</body>	
+</html>

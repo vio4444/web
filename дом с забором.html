@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<script>
+			function draw() {
+				var canvas = document.getElementById('canvas');
+				var ctx = canvas.getContext('2d');
+				ctx.fillStyle = 'grey';
+				ctx.fillRect(150,150,100,100);
+				ctx.fillStyle = 'brown';
+				ctx.fillRect(0,200,550,50);
+				
+				
+				//рисование линий+
+				ctx.beginPath();
+				ctx.moveTo(150,150); // ставим курсор на координату без рисования линии
+				ctx.lineTo(200,75); // от текущего положения курсора перемещаемся в указанную координату оставляя след
+				ctx.lineTo(250,150);
+				ctx.fillStyle = 'orange';
+				ctx.fill();
+				ctx.stroke(); // отображение нарисованного можно только в конце вызвать
+				//-
+				//елка1
+				ctx.beginPath();
+				ctx.moveTo(350,200); // 
+				ctx.lineTo(420,150); // 
+				ctx.lineTo(472,200);
+				ctx.fillStyle = 'green';
+				ctx.fill();
+				ctx.stroke();
+				//конец елки1
+				//елка1
+				ctx.beginPath();
+				ctx.moveTo(360,160); // 
+				ctx.lineTo(420,85); // 
+				ctx.lineTo(472,160);
+				ctx.fillStyle = 'green';
+				ctx.fill();
+				ctx.stroke();
+				//конец елки1
+			}
+		</script>
+	</head>
+	<body onload="draw();">
+		<canvas id="canvas" width="1000" height="1000">
+		</canvas>
+	</body>	
+</html>
